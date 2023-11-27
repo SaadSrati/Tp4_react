@@ -1,3 +1,4 @@
+/* Default styles for larger screens */
 .App {
   text-align: center;
   margin-left: 400px;
@@ -9,7 +10,6 @@
   border-style: inset double;
   background-color: ghostwhite;
 }
-
 
 h1 {
   font-size: 24px;
@@ -40,4 +40,52 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+/* Media query for screens smaller than 600px */
+@media screen and (max-width: 600px) {
+  .App {
+    margin: 10px;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  li {
+    font-size: 16px;
+  }
+}
+
+/* Media query for screens between 601px and 1024px */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .App {
+    margin: 20px;
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  li {
+    font-size: 17px;
+  }
+}
+
+/* Media query for screens larger than 1024px */
+@media screen and (min-width: 1025px) {
+  .App {
+    margin: 30px;
+    width: 60%;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  li {
+    font-size: 20px;
+  }
 }
